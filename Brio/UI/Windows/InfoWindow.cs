@@ -31,13 +31,11 @@ internal class InfoWindow : Window
             {
                 string text = $"Welcome to Brio v{_configurationService.Version}!";
                 text += "\n\n";
-                text += "Brio is a suite of tools to enhance your GPosing experience, primarily developed by Asgard.";
+                text += "Brio is a suite of tools to enhance your GPosing experience, primarily developed by Asgard. Now maintained by biot08";
                 text += "\n\n";
                 text += "Brio is currently in alpha, and as such, there may be bugs. If you find any, please report them.";
                 text += "\n\n";
                 text += "Happy Posing!";
-                text += "\n";
-                text += " - Asgard";
 
                 ImGui.PushTextWrapPos(segmentSize * 2);
                 ImGui.TextWrapped(text);
@@ -58,27 +56,17 @@ internal class InfoWindow : Window
 
                 ImGui.PushStyleColor(ImGuiCol.Button, new Vector4(255, 0, 0, 255) / 255);
                 if (ImGui.Button("Report Issue", buttonSize))
-                    Process.Start(new ProcessStartInfo { FileName = "https://github.com/AsgardXIV/Brio/issues", UseShellExecute = true });
+                    Process.Start(new ProcessStartInfo { FileName = "https://github.com/WisottXIV/Brio/issues", UseShellExecute = true });
                 ImGui.PopStyleColor();
 
                 ImGui.PushStyleColor(ImGuiCol.Button, new Vector4(110, 84, 148, 255) / 255);
                 if (ImGui.Button("GitHub Repository", buttonSize))
-                    Process.Start(new ProcessStartInfo { FileName = "https://github.com/AsgardXIV/Brio", UseShellExecute = true });
-                ImGui.PopStyleColor();
-
-                ImGui.PushStyleColor(ImGuiCol.Button, new Vector4(255, 91, 94, 255) / 255);
-                if (ImGui.Button("Donate on Ko-Fi", buttonSize))
-                    Process.Start(new ProcessStartInfo { FileName = "https://ko-fi.com/asgard", UseShellExecute = true });
-                ImGui.PopStyleColor();
-
-                ImGui.PushStyleColor(ImGuiCol.Button, new Vector4(29, 161, 242, 255) / 255);
-                if (ImGui.Button("Asgard's Twitter", buttonSize))
-                    Process.Start(new ProcessStartInfo { FileName = "https://twitter.com/AsgardXIV", UseShellExecute = true });
+                    Process.Start(new ProcessStartInfo { FileName = "https://github.com/WisottXIV/Brio", UseShellExecute = true });
                 ImGui.PopStyleColor();
 
                 ImGui.PushStyleColor(ImGuiCol.Button, new Vector4(0, 70, 0, 255) / 255);
                 if (ImGui.Button("Licenses", buttonSize))
-                    Process.Start(new ProcessStartInfo { FileName = "https://github.com/AsgardXIV/Brio/blob/main/Acknowledgements.md", UseShellExecute = true });
+                    Process.Start(new ProcessStartInfo { FileName = "https://github.com/WisottXIV/Brio/blob/main/Acknowledgements.md", UseShellExecute = true });
                 ImGui.PopStyleColor();
 
             }
