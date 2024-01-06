@@ -20,7 +20,7 @@ Brio is currently in alpha, and as such, there may be bugs. If you find any, ple
 * Works with Ktisis and Anamnesis (Enable Brio integration within Anamnesis for a better experience)
 
 ## Installation
-1. Add the custom Dalamud repo `https://github.com/WisottXIV/Brio/blob/main/repo.json`
+1. Add the custom Dalamud repo `https://raw.githubusercontent.com/WisottXIV/Brio/main/repo.json`
 2. Enable the `Brio` plugin
 3. Run the `/brio` command
 
